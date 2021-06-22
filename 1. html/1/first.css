@@ -1,0 +1,32 @@
+body{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    background-color: ivory;
+}
+
+h1,h3{
+    font-style: italic;
+}
+
+#sidebar{ 
+    float: left;
+    width:  25%;
+}
+
+#main-content{
+    padding-left: 25%;
+    width: 75%;
+}
+
+h3.error{
+    color:crimson;
+}
+
+span{
+    color: purple;
+}
+
+span.error{
+    color: red;
+}
