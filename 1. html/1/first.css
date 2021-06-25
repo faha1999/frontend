@@ -19,6 +19,14 @@ h1,h3{
     width: 75%;
 }
 
+#control-bar{
+    font-size: .60em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
 h3.error{
     color:crimson;
 }
