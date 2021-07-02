@@ -1,0 +1,209 @@
+body {
+	font-family: Raleway,"Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	font-size: 1.125rem;
+	line-height: 1.618;
+	margin: 0;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 3.3rem;
+	line-height: 1.35;
+	margin: 0.8em 0;
+}
+
+h2 {
+	font-weight: 800;
+	font-size: 2.3rem;
+	line-height: 1.45;
+	margin: 1em 0;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.85rem;
+	line-height: 1.6;
+	margin: 1.3em 0;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 1.55rem;
+	line-height: 1.7;
+	margin: 1.5em 0;
+}
+
+h5 {
+	font-weight: 600;
+	font-size: 1.4rem;
+	line-height: 1.6;
+	margin: 1.6em 0;
+}
+
+h6 {
+	font-weight: 500;
+	font-size: 1.25rem;
+	line-height: 1.6;
+	margin: 1.6em 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header, footer {
+	text-align: center;
+	padding: 2rem;
+}
+
+.hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 5rem;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 0.1875rem;
+}
+
+.col_01 {
+	width: 62.5%;
+	float: left;
+}
+
+.col_01 > :first-child {
+	margin-top: 0;
+}
+
+.col_02 {
+	width: 37.5%;
+	float:right;
+	padding-left: 5rem;
+	box-sizing: border-box;
+}
+
+.image_frame {
+	box-sizing: border-box;
+	padding: 0.75rem;
+	border-style: solid;
+	border-width: 0.1875rem;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+@media (max-width: 85rem){
+	body {
+		padding: 0 2.5rem;
+	}
+}
+
+@media (max-width: 80rem){
+	.wrapper {
+		padding: 4.5rem;
+	}
+	.col_02 {
+		padding-left: 4.5rem;
+	}
+}
+
+@media (max-width: 75rem){
+	.wrapper {
+		padding: 4rem;
+	}
+	.col_02 {
+		padding-left: 4rem;
+	}
+}
+
+@media (max-width: 70rem){
+	.wrapper {
+		padding: 3.5rem;
+	}
+	.col_02 {
+		padding-left: 3.5rem;
+	}
+}
+
+@media (max-width: 65rem){
+	.wrapper {
+		padding: 3rem;
+	}
+	.col_02 {
+		padding-left: 3rem;
+	}
+}
+
+@media (max-width: 60rem){
+	h1 {
+		font-size: 5.6vw;
+	}
+
+	h2 {
+		font-size: 3.9vw;
+	}
+
+	.wrapper {
+		padding: 4rem;
+	}
+
+	.col_01, .col_02 {
+		float: none;
+		width: 100%;
+	}
+
+	.col_02 {
+		padding-left: 0;
+		padding-top: 4rem;
+	}
+}
+
+@media (max-width: 55rem){
+	.wrapper {
+		padding: 3.5rem;
+	}
+}
+
+@media (max-width: 45rem){
+	body {
+		padding: 0;
+	}
+	h1 {
+		font-size: 6.5vw;
+	}
+
+	h2 {
+		font-size: 5vw;
+	}
+	.wrapper {
+		padding: 3rem;
+	}
+}
+
+@media (max-width: 35rem){
+	.wrapper {
+		padding: 2.5rem;
+	}
+}
+
+
+
+
+
+
