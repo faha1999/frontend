@@ -3,6 +3,21 @@ body {
 	font-size: 1.125rem;
 	line-height: 1.618;
 	margin: 0;
+	background-color: #75A1A0;
+	color: #3a3f3f;
+	background-image: url(./images/bg_one.jpg)
+}
+
+a, a:link, a:visited{
+	color: #864200;
+}
+
+a:hover, a:active{
+	color: #34918f;
+}
+
+header, footer{
+	color: #003837;
 }
 
 h1 {
@@ -71,8 +86,14 @@ header, footer {
 	margin: 0 auto;
 	padding: 5rem;
 	box-sizing: border-box;
-	border-style: solid;
-	border-width: 0.1875rem;
+	background-color: #cec9bc;
+	background-image: url(./images/bg_two.jpg);
+	border: 00.1875rem solid #d8d4c3;
+	box-shadow: 0.625rem 0.625rem rgba(59, 58, 87, 0.5);
+}
+
+.heading_shadow{
+	text-shadow: 0.0625rem 0.0625rem #d0cbb8, 0.125rem 0.125rem #aba076;
 }
 
 .col_01 {
@@ -94,8 +115,8 @@ header, footer {
 .image_frame {
 	box-sizing: border-box;
 	padding: 0.75rem;
-	border-style: solid;
-	border-width: 0.1875rem;
+	background-color: #443d3b;
+	border: 0.1875rem solid #d8d4c3;
 }
 
 .clearfix:before,
