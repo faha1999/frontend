@@ -1,0 +1,76 @@
+/* Demo styles, not related to Grid. */
+.demo {
+	color: rgba(255, 255, 255, 1);
+	padding: 2rem;
+	border-radius: 3px;
+}
+
+header.demo {
+	background-color: #6B5CA5;
+}
+
+aside.demo {
+	background-color: #52AA8A;
+}
+
+main.demo {
+	background-color: #F76C5E;
+}
+
+footer.demo {
+	background-color: #3AAED8;	
+}
+
+/* Float-based layout. */
+@media only screen and (min-width: 600px) {
+	.demo-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+	
+	.demo-container aside {
+		width: 33%;
+		float: left;
+	}
+	
+	.demo-container main {
+		float: left;
+		width: 67%;
+	}
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/* CSS Grid layout. */
+.demo-grid {
+	width: 95%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.demo-grid header,
+.demo-grid footer,
+.demo-grid aside,
+.demo-grid main {
+	grid-column: span 2;
+}
+
+.demo-grid aside {
+	grid-row: 3;
+}
+
+@media only screen and (min-width: 600px) {
+	.demo-grid aside {
+		grid-column: 1;
+		grid-row: 2;
+	}	
+
+	.demo-grid main {
+		grid-column: 2 / -1;
+	}	
+}
