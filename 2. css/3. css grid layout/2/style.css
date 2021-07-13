@@ -1,0 +1,13 @@
+.container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+/* 	grid-template-rows: repeat(3, 100px); */
+	grid-gap: 10px;
+}
+
+/* Demo style - not necessary for Grid */
+.item {
+	background-color: #0593be;
+	color: white;
+	padding: 1rem;
+}
