@@ -1,0 +1,45 @@
+/* Demo styles, not related to Grid. */
+.demo {
+	color: rgba(255, 255, 255, 1);
+	padding: 2rem;
+	border-radius: 3px;
+}
+
+header.demo {
+	background-color: #6B5CA5;
+}
+
+aside.demo {
+	background-color: #52AA8A;
+}
+
+main.demo {
+	background-color: #F76C5E;
+}
+
+footer.demo {
+	background-color: #3AAED8;	
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	grid-template-rows: 100px 300px 100px;
+}
+
+header {
+	grid-column: 1 / -1;
+}
+
+main {
+	grid-column: 1 / span 3;
+}
+
+aside {
+	grid-column: -1;
+	grid-row: 1 / -1;
+}
+
+footer {
+	grid-column: 1 / span 3;
+}
