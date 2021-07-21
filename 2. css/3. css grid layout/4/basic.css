@@ -1,0 +1,64 @@
+article > * {
+    min-width: 0;
+}
+
+article > h1 {
+    font-family: Lucida Grande;
+}
+
+article > p {    
+    --x-height-multiplier: 0.375;
+    --baseline-multiplier: 0.17;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    letter-spacing: .01rem;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+article > .aside {
+    font-family: Lucida Grande;
+    margin: 30px 20px;
+    color: #666;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+}
+
+.line-numbers a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 1em;
+}
+
+code {
+    background: #eee;
+    padding: 2px 5px;
+}
+
+pre {
+    background: #eee;
+    padding: 10px 15px;
+    overflow: auto;
+}
+
+pre > code {
+    padding: 0;
+}
+
+figure {
+    margin: 0;
+}
+
+figure figcaption {
+    color: #666;
+    font-style: italic;
+    font-size: 0.8em;
+}
