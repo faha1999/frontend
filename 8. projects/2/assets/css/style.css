@@ -74,7 +74,7 @@ h1{
 h2{
     font-size: 2.25rem;
     font-weight: 700;
-    color: ver(--secondary-color);
+    color: var(--secondary-color);
     text-transform: capitalize;
     line-height: 3rem;
 }
@@ -82,7 +82,7 @@ h2{
 h4{
     font-size: 18px;
     font-weight: 800;
-    color: ver(--secondary-color);
+    color: var(--secondary-color);
     text-transform: capitalize;
     line-height: 0.5rem;
 }
@@ -90,7 +90,7 @@ h4{
 h5{
     font-size: 1rem;
     font-weight: 700;
-    color: ver(--primary-color);
+    color: var(--primary-color);
     text-transform: capitalize;
     margin-bottom: 0.5rem;
 }
@@ -98,7 +98,7 @@ h5{
 p{
     font-size: 1rem;
     font-weight: 400;
-    color: ver(--secondary-color);
+    color: var(--secondary-color);
     text-transform: uppercase;
     line-height: 1.75rem;
     letter-spacing: 1px;
@@ -228,14 +228,127 @@ p{
     text-transform: uppercase;
 }
 
+/* Start About */
+.about-section{
+    background: var(--white-color);
+}
 
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.63rem;
+}
 
+.about-section .text-sec{
+    padding-left: 2rem;
+}
 
+.food-type{
+    padding-top:3.25rem;
+}
 
+.food-type ul li{
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 32px;
+    position: relative;
+    margin-left: 30px;
+}
 
+.food-type ul li::before{
+    position:absolute;
+    left:-2.1875rem;
+    color:var(--primary-color);
+    font-size: 1.25rem;
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+}
 
+/* Start Story */
+.story-section{
+    width: 100%;
+    height: 25.125rem;
+    background: url(../images/bg/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 100px;
+    text-align: center;
+}
 
+.story-section h2{
+    color: var(--primary-color)
+}
 
+/* Start Explore food */
+.explore-food .card{
+    border: none;
+    background: transparent;
+    border-radius: 0.94rem;
+}
+
+.explore-food .card img{
+    border-radius: 0.94rem;
+    object-fit: cover;
+}
+
+.explore-food .card span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 1rem;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+.explore-food .card span del{
+    color: var(--text-color);
+    margin-left: 0.5rem;
+}
+
+/* Start Testimonial */
+.testimonial-section{
+    background-color: var(--primary-color);
+}
+
+.testimonial-section .carousel-item{
+    margin-top:3rem;
+    padding:10rem 3.125rem;
+    background-color:var(--white-color);
+    border-radius: 0.9375rem;
+    text-align: center;
+} 
+
+.testimonial-section .carousel-caption img{
+    max-width:5rem;
+    border-radius: 50%;
+    padding:0.3125rem;
+}
+  
+.testimonial-section .carousel-item .carousel-caption p{
+    font-size: 1.3125rem;
+    line-height: 2.0625rem;
+    padding:0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-indicators{
+    bottom:-2.8125rem;
+}
+
+.testimonial-section .carousel-indicators button{
+    width:15px;
+    height:15px;
+    outline:none;
+    border-radius: 50%;
+    border:none;
+    margin-right:1rem;
+    opacity:0.2;
+}
+
+.testimonial-section .carousel-indicators button.active{
+    opacity:1;
+}
 
 
 
@@ -286,6 +399,12 @@ p{
     /* Top banner */
     .top-banner{
         padding: 10.88rem 0 9.38rem;
+    }
+
+    /* Story */
+    .story-section{
+        height: auto;
+        padding: 3rem 0;
     }
     
 }
