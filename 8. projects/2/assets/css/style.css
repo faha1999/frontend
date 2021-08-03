@@ -158,6 +158,87 @@ p{
     margin: auto;
 }
 
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2{
+    color: var(--white-color);
+}
+
+/* Start Header */
+.navigation-warp{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-warp .nav-item{
+    padding: 0 0.625rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+
+.nav-link{
+    font-size: 0.94rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-warp .main-btn{
+    padding: 0.32rem;
+    box-shadow: none;
+    margin-left: 0.63rem;
+}
+
+.navigation-warp.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0,0,0,0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+/* Start top-banner */
+.top-banner{
+    width: 100%;
+    background: url(../images/bg/bg-1.jpg) no-repeat center;
+    background-size: cover;
+    padding: 16.88rem 0 9.38rem;
+}
+
+/* Start Counter */
+.counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+}
+
+.counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -168,10 +249,44 @@ p{
 }
 
 @media (max-width: 991px) {
-    
+    /* Start About */
+    .text-content{
+        width: 100%;
+    }
+
+    /* Navbar brand */
+    .navigation-warp .navbar-brand img{
+        height: 3.82rem;
+    }
+    .navigation-warp{
+        text-align: center;
+        background-color: var(--white-color);
+    }
+    .navigation-warp .nav-link{
+        line-height: 1.88rem;
+    }
+
+    /* Start Banner */
+    .top-banner{
+        padding: 9.34rem 0 9.34rem;
+    }
 }
 
 @media (max-width: 767px) {
+    /* Global */
+    h1{
+        font-size: 2.8rem;
+    }
+
+    h2{
+        font-size: 2rem;
+        line-height: 2.06rem;
+    }
+
+    /* Top banner */
+    .top-banner{
+        padding: 10.88rem 0 9.38rem;
+    }
     
 }
 
