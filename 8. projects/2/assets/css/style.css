@@ -345,21 +345,70 @@ p{
     margin-right:1rem;
     opacity:0.2;
 }
-
 .testimonial-section .carousel-indicators button.active{
     opacity:1;
 }
 
-
-
-
-
-
-
-/* Responsive outline */
-@media (max-width: 1024px) {
-    
+/* Start FAQ */
+.faq h4 span{
+    color:var(--primary-color);
+    font-size: 1.875rem;
+    margin-right:0.3125rem;
+} 
+.book-food{
+    width:100%;
+    background:url('../images/bg/bg-3.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:0 71.9125px;
+    padding:4.375rem 0
 }
+  
+  /* Form Control */
+.newsletter{
+    width:55%;
+    margin:0 auto;
+}
+.newsletter .form-control{
+    height:3.225rem;
+    padding:0 1.25rem;
+    font-size: 0.875rem; 
+    width:100%;
+    border:none;
+    border-radius: 0;
+    background:transparent;
+    border:0.1875rem solid var(--text-gray);
+    color:var(--black-color);
+    font-weight: 700;
+}
+.newsletter .form-control:hover,
+.newsletter .form-control:focus{
+    outline:none;
+    box-shadow: none;
+    border-color:var(--primary-color);
+}
+
+
+/* Start Footer */
+.footer{
+    background: var(--primary-color);
+}
+.footer .footer-link{
+    font-size:1rem;
+    color:var(--white-color);
+    padding:0 1.875rem;
+}
+.footer .footer-link:hover{
+    color:var(--white-color) !important;
+}
+.footer a i{
+    font-size: 1.5rem;
+    color:var(--white-color);
+    padding:0 1rem;
+}
+
+
+/* Media query solution */
 
 @media (max-width: 991px) {
     /* Start About */
@@ -379,9 +428,14 @@ p{
         line-height: 1.88rem;
     }
 
-    /* Start Banner */
+    /* Banner */
     .top-banner{
         padding: 9.34rem 0 9.34rem;
+    }
+
+    /* Carousal */
+    .testimonial-section .carousel-item .carousel-caption p{
+        padding: 0;
     }
 }
 
@@ -406,9 +460,32 @@ p{
         height: auto;
         padding: 3rem 0;
     }
+
+    /* Carousal */
+    .testimonial-section .carousel-item{
+        padding: 12rem 3.125rem;
+    }
+
+    /* newsletter */
+    .newsletter{
+        width:75%;
+    }
+    .newsletter .main-btn{
+        width:100%;
+        margin-top:1rem;
+    }
+
+    /* footer link */
+    .footer .footer-link,
+    .footer a i{
+        padding:0 0.7rem;
+    }
     
 }
 
 @media (max-width: 330px) {
-    
+    /* Carousal */
+    .testimonial-section .carousel-item{
+        padding: 13rem;
+    }
 }
