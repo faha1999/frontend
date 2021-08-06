@@ -1,0 +1,73 @@
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background: pink;
+}
+
+@media (min-width: 650px) {
+    body{
+        background: orange;
+    }
+    
+}
+
+@media (min-width: 400px) and (max-width: 649px) {
+    body{
+        background: purple;
+    }
+}
+
+/* Typography */
+h1{
+    font-size: 3rem;
+    color: #212614;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+/* Layout */
+
+img{
+    width: 100%;
+}
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.columns{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col-bg{
+    background: #212614;
+    padding: 1em;
+    color: #fff;
+}
+
+.col-1{
+    width: 20%;
+}
+
+.col-2{
+    width: 50%;
+}
+
+.col-3{
+    width: 70%;
+}
