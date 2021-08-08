@@ -3,13 +3,56 @@ body{
     margin: 0;
 }
 
-/* Start nav */
-header{
-    text-align: center;
-    background: pink;
-    padding: 2em 0;
+/* Typography */
+h1, h2, h3{
+    font-weight: 400;
+    color: #143774;
+    margin-top: 0;
+}
+h1{
+    font-size: 2rem;
+    margin: 0;
 }
 
+.subtitle{
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+a{
+    color: #1792d2;
+}
+
+a:hover{
+    color: #143774;
+}
+
+strong{
+    font-weight: 700;
+}
+
+/* Layout */
+header{
+    background: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Start nav */
 nav ul{
     list-style: none;
     display: flex;
@@ -18,13 +61,44 @@ nav ul{
 }
 
 nav li {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
 nav a {
-
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
 }
 
-nav a:hover {
-    
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.currrent-page{
+    border-bottom: 1px solid #707070;
+}
+
+.currrent-page:hover{
+    color: #707070;
+}
+
+/* Responsive style */
+@media (max-width: 675px) {
+    .container-nav{
+        flex-direction: column;
+    }
+
+    header{
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav li{
+        margin: .5em 0;
+    }
 }
