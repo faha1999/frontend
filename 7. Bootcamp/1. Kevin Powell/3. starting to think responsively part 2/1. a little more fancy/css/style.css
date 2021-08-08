@@ -1,0 +1,70 @@
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+}
+
+/* Typography */
+h1{
+    font-size: 3rem;
+    color: #212614;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+/* Layout */
+
+img{
+    width: 100%;
+}
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.columns{
+    display: flex;
+    margin: 1rem 0;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .columns{
+        flex-direction: column;
+    }
+}
+
+.col-bg{
+    background: #212614;
+    padding: 1em;
+    color: #fff;
+}
+
+.col-1{
+    width: 20%;
+}
+
+.col-2{
+    width: 50%;
+}
+
+.col-3{
+    width: 70%;
+}
+
+@media (max-width: 600px) {
+    .col-1, .col-2, .col-3{
+        width: 100%;
+    }
+}

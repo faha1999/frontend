@@ -1,0 +1,30 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+/* Start nav */
+header{
+    text-align: center;
+    background: pink;
+    padding: 2em 0;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+nav a {
+
+}
+
+nav a:hover {
+    
+}
