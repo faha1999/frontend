@@ -1,0 +1,72 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 800px;
+    background: #111d4a;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .card{
+        flex-direction: row;
+    }
+
+    .card-img{
+        height: 300px;
+    }
+}
+
+.card-img{
+    object-fit: cover;
+    flex-basis: 200px;
+}
+
+.card-container{
+    padding: 1em;
+}
+
+.card-title{
+    color: #05cbe9;
+    font-size: 1.75rem;
+    margin: 0;
+}
+
+.card-body{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.card-read-time{
+    margin: 0;
+    line-height: 1;
+    opacity: .6;
+}
+
+.card-read-time span{
+    font-weight: 700;
+    display: block;
+    font-size: 1.25em;
+}
+
+.card-btn{
+    font-size: 1.25rem;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .35em 1em;
+    letter-spacing: 1px;
+}
