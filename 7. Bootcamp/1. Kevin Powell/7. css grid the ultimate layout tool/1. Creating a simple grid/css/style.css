@@ -1,0 +1,10 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template: 100px 400px / 250px 250px 250px;
+}
+

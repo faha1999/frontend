@@ -1,0 +1,29 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template: 100px 400px / 250px 250px 250px;
+}
+
+.grid-item{
+    color: white;
+    padding: 1em 2em;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.one{
+    background: #b823c1;
+    grid-column: 2 / span 2 ;
+    grid-row: span 2;
+}
+
+.two{
+    background: #ff5670;
+    grid-column: 1 / -2;
+}
