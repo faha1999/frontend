@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    grid-template: 100px 400px / 250px 250px 250px;
+    justify-items: stretch;
+}
+
+.grid-item{
+    background: #b823c1;
+    color: white;
+    padding: 1em 2em;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big{
+    background: #ff5670;
+    padding: 3em 2em;
+}
+
+.start{
+    align-self: center;
+    justify-self: center;
+}
