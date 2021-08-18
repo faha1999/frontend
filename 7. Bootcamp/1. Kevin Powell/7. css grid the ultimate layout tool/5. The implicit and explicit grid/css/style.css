@@ -1,0 +1,39 @@
+.grid{
+    display: grid;
+    grid-template-columns: 150px 150px 200px;
+    grid-template-areas:
+        "header header header"
+        "sidebar content content"
+        "footer footer footer";
+}
+
+.header{
+    grid-area: header;
+}
+
+.sidebar{
+    grid-area: sidebar;
+}
+
+.big{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.grid-item{
+    background: #b023c1;
+    color: white;
+    padding: 1em 2em;
+    border: 2px solid purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big{
+    padding: 3em 2em;
+    background: #ff5670;
+}

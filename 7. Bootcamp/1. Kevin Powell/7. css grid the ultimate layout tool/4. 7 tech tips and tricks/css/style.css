@@ -75,7 +75,7 @@ body{
 
 @media (min-width: 600px) {
     .card{
-        grid-template: 1em auto auto 150px 1em / 200px auto auto 1em;
+        grid-template: 1em auto auto 150px 1em / 200px auto auto 0px;
         grid-gap: 0 1em;
     }
 
