@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: 150px 150px 200px;
     grid-template-areas:
-        "header header header"
+        "sidebar header header"
         "sidebar content content"
-        "footer footer footer";
+        "sidebar footer footer";
 }
 
 .header{
