@@ -1,13 +1,24 @@
 .grid{
     display: grid;
-    grid-template-columns: 150px 150px 200px;
+    grid-template-columns: 5em auto 5em;
     grid-template-areas:
         "sidebar header header"
-        "sidebar content content"
-        "sidebar footer footer";
+        ". content ."
+        ". sidebar ."
+        "footer footer footer";
 }
 
-.header{
+@media (main-width: 600px) {
+    .grid{
+        grid-template-columns: 100px minmax(200px, 500px) minmax(100px 200px) 100px;
+        grid-template-areas: 
+        "header header header header"
+        ". content sidebar ."
+        "footer footer footer footer";
+    }
+}
+
+/* .header{
     grid-area: header;
 }
 
@@ -21,8 +32,8 @@
 
 .footer{
     grid-area: footer;
-}
-
+} */
+ 
 .grid-item{
     background: #b023c1;
     color: white;
