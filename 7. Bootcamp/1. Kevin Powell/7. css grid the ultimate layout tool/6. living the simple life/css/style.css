@@ -180,7 +180,8 @@ nav a:focus {
 .article-recent {
     margin-bottom: 2em;
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 1fr min-content;
+    grid-gap: 0 1em;
     grid-template-areas: 
     "image image"
     "title date"
@@ -190,22 +191,37 @@ nav a:focus {
 
 .article-image { grid-area: image }
 .article-title { grid-area: title }
-.article-info { grid-area: date; justify-self: end; }
+.article-info { 
+    grid-area: date; 
+    justify-self: end; 
+}
 .article-body { grid-area: body }
 .article-read-more { grid-area: read-more }
 
+.article-info,
+.article-title{
+    align-self: baseline;
+}
 
 @media (min-width: 675px) {
-    
-    .article-image {
-        order: -2;
-        min-height: 250px;
-        object-fit: cover;
-        /* object-position: left; */
+
+    .article-recent {
+        grid-template-columns: minmax(100px, 250px) minmax(350px, 1fr);
+        grid-template-areas: 
+        "image title"
+        "image body"
+        "image read-more"
+        "date date";
+    }
+
+    .article-info {
+        justify-self: start; 
     }
     
-    .article-info {
-        order: -1;
+    .article-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
