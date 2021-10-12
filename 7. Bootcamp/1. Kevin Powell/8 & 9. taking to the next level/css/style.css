@@ -36,6 +36,7 @@ h1, h2, strong {
     font-size: 3rem;
     margin-bottom: .5em;
     justify-self: center;
+    color: #000;
 }
 
 .page-title::after {
