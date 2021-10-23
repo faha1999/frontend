@@ -1,0 +1,65 @@
+@import '../scss/resets';
+@import '../scss/veriable';
+
+// function
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name );
+}
+
+// mixin
+@mixin flexCenter ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color , 100%);
+        color: darken($text-color, 100%);
+    }
+}
+
+// mixin media query
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+
+body {
+    background: $primary-color;
+    color: $text-color;
+}
+
+.main{
+    @include flexCenter(row);
+    width: 80%;
+    margin: 0 auto;
+
+    #{&}_paragraph1{
+        font-weight: weight(regular);
+
+        &:hover{
+            color: pink;
+        }
+    }
+
+    #{&}_paragraph2{
+        @extend .main_paragraph1;
+
+        &:hover{
+            color: $accent-color;
+        }
+    }
+
+    @include mobile{
+        flex-direction: column;
+    }
+}
+
+.light{
+    @include theme($light-theme: true);
+
+}
