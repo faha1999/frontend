@@ -4,11 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>portfolio - SCSS</title>
 
     <link rel="stylesheet" href="./assets/scss/style.css">
 </head>
 <body>
+
+    <!-- Start Header -->
+    <header>
+        <div class="menu-btn">
+            <span class="menu-btn_burger"></span>
+        </div>
+
+        <!-- Start Nav -->    
+        <nav class="nav">
+            <ul class="menu-nav">
+                <li class="menu-nav_item">
+                    <a href="index.html" class="menu-nav_link active">Home</a>
+                </li>
+
+                <li class="menu-nav_item">
+                    <a href="about.html" class="menu-nav_link">About Me</a>
+                </li>
+
+                <li class="menu-nav_item">
+                    <a href="projects.html" class="menu-nav_link">MY Projects</a>
+                </li>
+
+                <li class="menu-nav_item">
+                    <a href="contact.html" class="menu-nav_link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     
+    <!-- Start Main -->
+    <main>
+        <section class="home">
+            <h2>Hi! My Name Is</h2>
+            <h1 class="home_name">
+                John <span class="home_name-last">Due</span>
+            </h1>
+            <h2>
+                Web Developer, Designer & Programmer
+            </h2>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+
+            <!-- Start Footer -->
+            <footer>&copy; Copyright 2021</footer>
+        </section>
+    </main>
+
+    
+    <!-- js -->
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 </html>
