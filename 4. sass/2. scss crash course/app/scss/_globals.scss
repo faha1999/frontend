@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1100px;
+    padding: 0 30px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+%btn{
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+
+    &:hover{
+        transform: scale(.98);
+    }
+}
+
+.btn-primary{
+    @extend %btn;
+    @include set-background(lighten($primary-color, 10%));
+}
+
+.btn-secondary{
+    @extend %btn;
+    @include set-background($secondary-color);
+}
+
+// Margin & Padding
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+
+    .my-#{$space} {
+        margin: #{$space}rem 0;
+    }
+
+    .p-#{$space} {
+        padding: #{$space}rem;
+    }
+
+    .py-#{$space} {
+        padding: #{$space}rem 0;
+    }
+}
