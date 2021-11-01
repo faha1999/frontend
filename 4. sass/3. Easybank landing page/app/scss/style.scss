@@ -1,4 +1,10 @@
-@import './globals';
-@import './variables';
-@import './header';
+@import "variables";
+@import "mixins";
+@import "animations";
 
+@import "globals";
+@import "header";
+@import "hero";
+@import "feature";
+@import "article";
+@import "footer";
