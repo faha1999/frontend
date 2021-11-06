@@ -1,0 +1,83 @@
+.btn-rounded {
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  border: 0.1rem solid rgba($white, 0.6);
+  background-color: $white;
+
+  span {
+    position: absolute;
+    background-color: $primary;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+
+    i {
+      color: $white;
+      font-size: 1rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &:hover {
+    @include gradient;
+    color: $white;
+    @include transitionLayout;
+
+    span {
+      background-color: rgba($black, 0.6);
+    }
+  }
+}
+
+// button
+.btn-outline-primary {
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    @include transitionLayout;
+  }
+}
+
+.btn-primary {
+  color: $primary;
+  border-color: $primary;
+  background-color: $primary;
+
+  &:focus {
+    background-color: $primary;
+  }
+
+  &:hover {
+    color: $white;
+    border-color: 1px solid $primary;
+    background-color: transparent;
+    transform: scale(1.2);
+    @include transitionLayout;
+
+    i,
+    i::before,
+    i::after,
+    i:focus {
+      color: $primary;
+    }
+  }
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+  color: $white;
+  background-color: $purple-light;
+  border-color: $purple-light;
+}

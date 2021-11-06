@@ -1,0 +1,44 @@
+.services {
+  position: relative;
+  padding: 1rem 0;
+
+  @include breakpoints-down(medium) {
+    .heading-line {
+      margin-bottom: 1rem !important;
+    }
+
+    .sercice-title {
+      margin-top: -2rem !important;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+    margin-top: 5rem;
+
+    p {
+      font-size: 1rem;
+
+      @include breakpoints-down(medium) {
+        font-size: 0.8rem !important;
+      }
+    }
+
+    @include breakpoints-down(medium) {
+      margin-top: -2rem !important;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      color: $primary;
+
+      @include breakpoints-down(medium) {
+        font-size: 1.5rem !important;
+      }
+    }
+  }
+
+  &__pic {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+.accordion-button {
+  &:focus {
+    border-color: $secondary !important;
+  }
+
+  &:not(.collapsed) {
+    color: $primary;
+    background-color: rgba($purple-light, 0.25);
+  }
+}
