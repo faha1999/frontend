@@ -144,7 +144,11 @@ button:active {
   animation: animatedBackground 8s linear infinite alternate;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  #animate-area {
+    padding-top: 7rem;
+    background-size: 13rem;
+  }
   #health-levels,
   #controls {
     width: 90% !important;
