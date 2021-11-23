@@ -2,17 +2,59 @@ const defaultResult = 0;
 let currentResult = defaultResult;
 let logEntries = [];
 
-// Gets input from input field
+// gets input from input field
 function getUserNumberInput() {
   return parseInt(usrInput.value);
 }
 
-// Generates and writes calculation log
-function createAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
+// generates and writes calculator log
+function creatAndWriteOutput(operator, resultBeforeCalc, calcNumber) {
   const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
-  outputResult(currentResult, calcDescription); // from vendor file
+  outputResult(currentResult, calcDescription);
 }
 
+// function add() {
+//   const enteredNumber = getUserNumberInput();
+//   const initialResult = currentResult;
+//   currentResult += enteredNumber;
+//   creatAndWriteOutput('+', initialResult, enteredNumber);
+//   const logEntry = {
+//     operation: 'ADD',
+//     prevResult: initialResult,
+//     number: enteredNumber,
+//     result: currentResult
+//   };
+//   logEntries.push(logEntry);
+//   console.log(logEntries);
+// }
+
+// function subtract() {
+//   const enteredNumber = getUserNumberInput();
+//   const initialResult = currentResult;
+//   currentResult -= enteredNumber;
+//   creatAndWriteOutput('-', initialResult, enteredNumber);
+// }
+
+// function multiply() {
+//   const enteredNumber = getUserNumberInput();
+//   const initialResult = currentResult;
+//   currentResult *= enteredNumber;
+//   creatAndWriteOutput('*', initialResult, enteredNumber);
+// }
+
+// function divide() {
+//   const enteredNumber = getUserNumberInput();
+//   const initialResult = currentResult;
+//   currentResult /= enteredNumber;
+//   creatAndWriteOutput('/', initialResult, enteredNumber);
+// }
+
+// addBtn.addEventListener('click', add);
+// subtractBtn.addEventListener('click', subtract);
+// multiplyBtn.addEventListener('click', multiply);
+// divideBtn.addEventListener('click', divide);
+
+// bind()
 function writeToLog(
   operationIdentifier,
   prevResult,
@@ -29,63 +71,29 @@ function writeToLog(
   console.log(logEntries);
 }
 
-function calculateResult(calculationType) {
+function calculate(operation) {
   const enteredNumber = getUserNumberInput();
-  if (
-    (calculationType !== 'ADD' &&
-      calculationType !== 'SUBTRACT' &&
-      calculationType !== 'MULTIPLY' &&
-      calculationType !== 'DIVIDE') ||
-    !enteredNumber
-  ) {
-    return;
-  }
-
-  // if (
-  //   calculationType === 'ADD' ||
-  //   calculationType === 'SUBTRACT' ||
-  //   calculationType === 'MULTIPLY' ||
-  //   calculationType === 'DIVIDE'
-  // ) {
-
   const initialResult = currentResult;
-  let mathOperator;
-  if (calculationType === 'ADD') {
+  let operator;
+
+  if (operation === 'ADD') {
     currentResult += enteredNumber;
-    mathOperator = '+';
-  } else if (calculationType === 'SUBTRACT') {
+    operator = '+';
+  } else if (operation === 'SUBTRACT') {
     currentResult -= enteredNumber;
-    mathOperator = '-';
-  } else if (calculationType === 'MULTIPLY') {
+    operator = '-';
+  } else if (operation === 'MULTIFLY') {
     currentResult *= enteredNumber;
-    mathOperator = '*';
-  } else if (calculationType === 'DIVIDE') {
+    operator = '*';
+  } else {
     currentResult /= enteredNumber;
-    mathOperator = '/';
+    operator = '/';
   }
-
-  createAndWriteOutput(mathOperator, initialResult, enteredNumber);
-  writeToLog(calculationType, initialResult, enteredNumber, currentResult);
-  // }
+  creatAndWriteOutput(operator, initialResult, enteredNumber);
+  writeToLog(operation, initialResult, enteredNumber, currentResult);
 }
 
-function add() {
-  calculateResult('ADD');
-}
-
-function subtract() {
-  calculateResult('SUBTRACT');
-}
-
-function multiply() {
-  calculateResult('MULTIPLY');
-}
-
-function divide() {
-  calculateResult('DIVIDE');
-}
-
-addBtn.addEventListener('click', add);
-subtractBtn.addEventListener('click', subtract);
-multiplyBtn.addEventListener('click', multiply);
-divideBtn.addEventListener('click', divide);
+addBtn.addEventListener('click', calculate.bind(this, 'ADD'));
+subtractBtn.addEventListener('click', calculate.bind(this, 'SUBTRACT'));
+multiplyBtn.addEventListener('click', calculate.bind(this, 'MULTIFLY'));
+divideBtn.addEventListener('click', calculate.bind(this, 'DIVIDE'));
